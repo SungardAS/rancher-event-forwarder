@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  app:
+    restart: always
+    build: .
+    env_file: .env
+    command: python /usr/src/app/listener.py

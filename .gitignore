@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.export
+*.pyc
+__*
+*.dist-info
+boto3
+botocore
+concurrent
+dateutil
+docutils
+jmespath
+requests
+websocket
+six.*
