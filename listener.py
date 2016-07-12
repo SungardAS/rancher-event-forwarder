@@ -56,6 +56,7 @@ def on_message(ws, message):
     msg_json = json.loads(message)
     type = msg_json.get('type')
     name = msg_json.get('name')
+    print 'type : %s, name : %s' % (type, name)
     if name == "resource.change":
         try:
             resource_type = msg_json.get('data').get('resource').get('type')
